@@ -1,13 +1,13 @@
 class Pig extends BaseClass {
   constructor(x, y){
     super(x,y,50,50);
-    this.image = loadImage("sprites/pig2.png");
+    this.image = loadImage("sprites/bird2.png");
     this.Visiblity = 255;
   }
 
  display(){
    //console.log(this.body.speed);
-   if(this.body.speed < 3){
+   if(this.body.speed < 5.75){
     super.display();
    }
    else{
@@ -21,6 +21,10 @@ class Pig extends BaseClass {
    
  }
 
-
+  score(){
+    if (this.Visiblity < 0 && this.Visiblity > -1005){
+      score++;
+    }
+  }
 
 };

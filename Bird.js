@@ -1,7 +1,7 @@
 class Bird extends BaseClass {
   constructor(x,y){
     super(x,y,50,50);
-    this.image = loadImage("sprites/bird2.png");
+    this.image = loadImage("sprites/pig2.png");
     this.smokeImage = loadImage("sprites/smoke.png");
     this.trajectory =[];
   }
@@ -23,3 +23,5 @@ class Bird extends BaseClass {
     }
   }
 }
+// https://studio.code.org/projects/gamelab/suzWOqADv-IBaqJu6sY4kiydOnaeURsi1USL3jP1yjg/edit
+// https://github.com/divyaparmar18/cannon
